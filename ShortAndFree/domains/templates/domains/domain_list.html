@@ -1,0 +1,10 @@
+lists each keyword for domains in database<br />
+
+{% for domain in domains %}
+  {{ domain.keyword }}<br />
+{% endfor %}
+
+<form method="get" action="{% url 'list' %}">
+    {{ form }}
+    <button type="submit">Submit</button>
+</form>
